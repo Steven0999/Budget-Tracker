@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   background: white;
   padding: 30px;
@@ -51,4 +51,39 @@ li {
   background: #e7e7e7;
   margin: 5px 0;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+li .top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li .desc {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.action-buttons button {
+  flex: 1;
+}
+
+.action-btn {
+  margin-left: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+  background-color: #888;
+}
+
+.action-btn:hover {
+  background-color: #666;
 }
