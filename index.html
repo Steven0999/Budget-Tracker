@@ -9,17 +9,28 @@
 <body>
   <div class="container">
     <h1>Spending Tracker</h1>
+
     <div class="budget-section">
       <input type="number" id="totalAmount" placeholder="Enter total budget" />
       <button onclick="setBudget()">Set Budget</button>
     </div>
+
     <div class="purchase-section">
       <input type="text" id="item" placeholder="What did you buy?" />
+      <input type="text" id="description" placeholder="Description" />
       <input type="number" id="price" placeholder="Price" />
+      <input type="date" id="date" />
       <button onclick="addPurchase()">Add Purchase</button>
     </div>
+
     <h2>Remaining: $<span id="remaining">0</span></h2>
+
     <ul id="purchaseList"></ul>
+
+    <div class="action-buttons">
+      <button onclick="saveData()">Save</button>
+      <button onclick="clearData()">Clear</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
